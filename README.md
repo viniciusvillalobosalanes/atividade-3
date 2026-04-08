@@ -1,3 +1,12 @@
+## Desafio 1
+![Desafio 1](desafio_1.png)
+
+## Desafio 2
+![Desafio 2](desafio_2.png)
+
+## Desafio 3
+![Desafio 3](desafio_3.png)
+
 ## Desafio 4
 ![Desafio 4](desafio_4.png)
 
@@ -18,3 +27,5 @@
 
 ## Desafio 10
 ![Desafio 10](desafio_10.png)
+
+⚠️ Tem que estar idêntico ao nome do arquivo (GitHub difere
