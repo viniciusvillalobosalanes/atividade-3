@@ -1,0 +1,18 @@
+# Fibonacci Iterativo - Complexidade O(n)
+def fib_iterativo(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
+
+# Fibonacci Recursivo Ingênuo - Complexidade O(2^n)
+# Cada chamada gera duas novas chamadas,
+# causando explosão exponencial e muitas alocações na stack.
+def fib_recursivo(n):
+    if n <= 1:
+        return n
+    return fib_recursivo(n-1) + fib_recursivo(n-2)
+
+n = 40
+print("Iterativo:", fib_iterativo(n))
+print("Recursivo:", fib_recursivo(n))
