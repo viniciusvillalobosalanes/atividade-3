@@ -1,0 +1,30 @@
+sistema_arquivos = {
+    "pasta1": {
+        "arquivo.txt": "conteudo",
+        "subpasta": {
+            "foto.png": "imagem"
+        }
+    }
+}
+
+def buscar_arquivo(pasta, nome):
+    # Caso Base
+    if nome in pasta:
+        return True
+
+    # Passo Recursivo
+    for item in pasta.values():
+        if isinstance(item, dict):
+            if buscar_arquivo(item, nome):
+                return True
+
+    return False
+
+
+# Programa principal
+resultado = buscar_arquivo(sistema_arquivos, "foto.png")
+
+if resultado:
+    print("Arquivo encontrado")
+else:
+    print("Arquivo não encontrado")

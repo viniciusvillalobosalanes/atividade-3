@@ -1,0 +1,20 @@
+# Código espaguete
+sal1 = 2000
+sal2 = 2500
+sal3 = 3000
+
+print("Funcionario 1:", sal1 * 0.9)
+print("Funcionario 2:", sal2 * 0.9)
+print("Funcionario 3:", sal3 * 0.9)
+
+# Refatoração
+
+def calcular_salario(salario):
+    return salario * 0.9  # função pura
+
+def imprimir_salario(nome, salario):
+    print(nome, calcular_salario(salario))
+
+imprimir_salario("Funcionario 1:", 2000)
+imprimir_salario("Funcionario 2:", 2500)
+imprimir_salario("Funcionario 3:", 3000)

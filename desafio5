@@ -1,0 +1,10 @@
+def aplicar_desconto(estoque):
+    for i in range(len(estoque)):
+        estoque[i] -= 10  # modifica objeto original
+
+estoque_loja = [100, 200, 300]
+aplicar_desconto(estoque_loja)
+
+# Listas são mutáveis e Python passa a referência do objeto.
+# A função recebe o mesmo objeto da memória.
+print("Estoque final:", estoque_loja)

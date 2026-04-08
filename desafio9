@@ -1,0 +1,12 @@
+def gerar_log():
+    contador = 1
+    while True:
+        yield f"Registro {contador}"
+        contador += 1
+
+log = gerar_log()
+
+for _ in range(5):
+    print(next(log))
+
+# Geração sob demanda evita armazenar infinitos dados na memória.

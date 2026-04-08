@@ -1,0 +1,14 @@
+def calcular_altitude(altitude_atual, ajuste):
+    return altitude_atual + ajuste  # não altera estado original
+
+def forcar_mutacao(altitude_container, ajuste):
+    altitude_container[0] += ajuste  # efeito colateral
+
+altitude = 10000
+nova_altitude = calcular_altitude(altitude, 500)
+print("Original:", altitude)
+print("Calculada:", nova_altitude)
+
+altitude_ref = [10000]
+forcar_mutacao(altitude_ref, 500)
+print("Após mutação:", altitude_ref[0])

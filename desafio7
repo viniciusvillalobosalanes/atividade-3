@@ -1,0 +1,13 @@
+# Versão incorreta (sem caso base)
+# def contagem(n):
+# print(n)
+# contagem(n-1)
+
+# Versão correta
+def contagem(n):
+    if n == 0:  # Caso Base
+        return
+    print(n)
+    contagem(n-1)
+
+contagem(5)

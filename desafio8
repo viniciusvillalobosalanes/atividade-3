@@ -1,0 +1,14 @@
+def linha_montagem():
+    pecas = 1
+    while True:
+        yield f"Peça {pecas} processada"
+        pecas += 1
+
+fabrica = linha_montagem()
+
+print(next(fabrica))
+print(next(fabrica))
+print(next(fabrica))
+
+# Diferente de run-to-completion,
+# o estado é pausado e retomado entre chamadas.

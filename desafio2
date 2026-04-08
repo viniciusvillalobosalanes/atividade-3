@@ -1,0 +1,13 @@
+def alterar_por_valor(saldo):
+    saldo += 100  # cria nova referência local
+
+def alterar_por_referencia(lista_saldo):
+    lista_saldo[0] += 100  # altera objeto original
+
+saldo_bancario = 1000
+alterar_por_valor(saldo_bancario)
+print("Após valor:", saldo_bancario)
+
+saldo_ref = [1000]
+alterar_por_referencia(saldo_ref)
+print("Após referência:", saldo_ref[0])
